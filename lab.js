@@ -12,3 +12,7 @@ console.log("All numbers are divisible by 5: " + allDivisibleBy5);
 //Check if the first number is larger than the last
 const isLargerThanLast = n1 > n4;
 console.log("The first number is larger than the last: " + isLargerThanLast);
+
+//Arithmetic chain
+const result = ((n2 - n1) * n3) % 3;
+console.log("The result of the arithmetic chain is: " + result);
