@@ -11,7 +11,9 @@ const durationAt55 = totalTrip / 55;
 const durationAt60 = totalTrip / 60;
 const durationAt75 = totalTrip / 75;
 console.log(
-  "Travelling at 55 mph, the trip will take " + durationAt55 + "hours"
+  "Travelling at 55 mph, the trip will take " +
+    durationAt55.toFixed(0) +
+    "hours"
 );
 console.log(
   "Travelling at 60 mph, the trip will take " + durationAt60 + "hours"
@@ -26,6 +28,29 @@ const gasUsageAt55 = totalTrip / mpgAt55;
 const gasUsageAt60 = totalTrip / mpgAt60;
 const gasUsageAt75 = totalTrip / mpgAt75;
 
-console.log(gasUsageAt55.toFixed(1) + " will be used to travel at " + mpgAt55);
-console.log(gasUsageAt60.toFixed(1) + " will be used to travel at " + mpgAt60);
-console.log(gasUsageAt75.toFixed(1) + " will be used to travel at " + mpgAt75);
+console.log(
+  gasUsageAt55.toFixed(1) +
+    " gallons of gas will be needed to travel at 55 mph "
+);
+console.log(
+  gasUsageAt60.toFixed(1) + " gallons of gas will be needed to travel at 60 mph"
+);
+console.log(
+  gasUsageAt75.toFixed(1) + " gallons of gas will be needed to travel at 75mph"
+);
+
+//Calculating fuel cost
+
+const fuelCost55 = gasUsageAt55 * fuelCost;
+const fuelCost60 = gasUsageAt60 * fuelCost;
+const fuelCost75 = gasUsageAt75 * fuelCost;
+
+console.log(
+  "You will spend: " + fuelCost55.toFixed(0) + " $ if you travel at 55 mph"
+);
+console.log(
+  "You will spend: " + fuelCost60.toFixed(0) + " $ if you travel at 60 mph"
+);
+console.log(
+  "You will spend: " + fuelCost75.toFixed(0) + " $ if you travel at 75 mph"
+);
