@@ -14,5 +14,15 @@ const isLargerThanLast = n1 > n4;
 console.log("The first number is larger than the last: " + isLargerThanLast);
 
 //Arithmetic chain
-const result = ((n2 - n1) * n3) % 3;
+const result = (n2 - n1) * n3;
 console.log("The result of the arithmetic chain is: " + result);
+
+//Finding the remainder
+const remainder = result % n4;
+console.log(
+  "The remainder of the arithmetic chain divided by 4th number is: " + remainder
+);
+
+//Checking is over 25
+const isOver25 = result > 25;
+console.log("The result is greater than 25: " + isOver25);
