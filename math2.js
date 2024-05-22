@@ -54,3 +54,19 @@ console.log(
 console.log(
   "You will spend: " + fuelCost75.toFixed(0) + " $ if you travel at 75 mph"
 );
+
+//Will the gas budget be enough?
+
+switch (true) {
+  case fuelCost55 <= budget:
+    console.log("Driving at 55 is within budget");
+    break;
+  case fuelCost60 <= budget:
+    console.log("Driving at 60 is within budget");
+    break;
+  case fuelCost75 <= budget:
+    console.log("Driving at 75 is within budget");
+    break;
+  default:
+    console.log("none of the fuel costs is within budet");
+}
